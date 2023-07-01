@@ -1,0 +1,384 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+	<!-- Slider -->
+	<header class="header slider-fade">
+		<div class="owl-carousel owl-theme">
+			<!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+			<div class="text-end item bg-img" data-overlay-dark="3" data-background="{% static 'images/slider/slider-1.jpg' %}">
+				<div class="v-middle caption mt-30">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7 offset-md-5">
+								<h1>Innovatives Design in Deutschland</h1>
+								<p>Bei A+A BAU sind wir stolz darauf, hochwertige Renovierungs- und
+									Sanierungsdienstleistungen anzubieten,
+									um Ihre Wohn- und Geschäftsgebäude in beeindruckende Räume zu verwandeln.
+								</p>
+								<div class="butn-light mt-30 mb-30"><a href="contact.html" ><span>Kontaktieren</span></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-end item bg-img" data-overlay-dark="4" data-background="{% static 'images/slider/slider-2.jpg' %}">
+				<div class="v-middle caption mt-30">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7 offset-md-5">
+								<h1>Innovatives Design in Europa</h1>
+								<p> Unser erfahrenes Team aus Handwerkern und Bauprofis ist darauf spezialisiert, sowohl
+									alte als auch neue Gebäude zu renovieren und ihnen ein neues Leben einzuhauchen.
+								</p>
+								<div class="butn-light mt-30 mb-30"><a href="contact.html"><span>Kontaktieren</span></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Corner -->
+		<div class="hero-corner"></div>
+		<div class="hero-corner3"></div>
+		<!-- Left Panel -->
+		<div class="left-panel">
+			<ul class="social-left clearfix">
+				<li><a href="#"><i class="ti-pinterest"></i></a></li>
+				<li><a href="#"><i class="ti-instagram"></i></a></li>
+				<li><a href="#"><i class="ti-twitter"></i></a></li>
+				<li><a href="#"><i class="ti-facebook"></i></a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- Content -->
+	<div class="content-wrapper">
+		<!-- Lines -->
+		<section class="content-lines-wrapper">
+			<div class="content-lines-inner">
+				<div class="content-lines"></div>
+			</div>
+		</section>
+		<!-- About -->
+		<section class="about section-padding mt-30">
+			<div class="container">
+				<div class="row">
+					<h2 class="section-title animate-box" data-animate-effect="fadeInUp">Über <span>A+A BAU</span></h2>
+					<div class="col-md-6 mb-30">
+						<div class="animate-box" data-animate-effect="fadeInUp">
+							<p>
+								Seit unserer Gründung haben wir es uns zur Aufgabe gemacht, die Visionen unserer Kunden
+								zu verwirklichen und ihre Gebäude in beeindruckende und funktionsfähige Räume zu
+								verwandeln.
+							</p>
+							<p>
+								Als A+A Bau bieten wir einen umfassenden Service für den Bau von neuen Häusern.
+								Von der Planung und Konzeption bis hin zur Umsetzung und Fertigstellung begleiten wir den gesamten Bauprozess.
+							</p>
+							<p>
+								Unser erfahrenes Team besteht aus qualifizierten Handwerkern und Bauprofis, die ihr
+								Fachwissen und ihre Leidenschaft in jedes Projekt einbringen.
+							</p>
+							<p>
+								Wir legen großen Wert auf Qualität, Präzision und Kundenzufriedenheit und streben stets
+								nach hervorragenden Ergebnissen.
+								<!-- Wir arbeiten eng mit Ihnen zusammen, um Ihre Anforderungen zu verstehen und maßgeschneiderte Lösungen zu entwickeln, die Ihren Erwartungen gerecht werden. -->
+							</p>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
+						<div class="about-img">
+							<div class="img"> <img src="{% static 'images/about.jpg' %}" class="img-fluid" alt=""> </div>
+							<div class="about-img-2 about-buro">München Office</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<!-- <section class="projects section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="section-title">Our <span>Projects</span></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="owl-carousel owl-theme">
+							<div class="item">
+								<div class="position-re o-hidden"> <img src="img/projects/1.jpg" alt=""> </div>
+								<div class="con">
+									<h6><a href="cotton-house.html">Interior</a></h6>
+									<h5><a href="cotton-house.html">Cotton House</a></h5>
+									<div class="line"></div> <a href="cotton-house.html"><i class="ti-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="position-re o-hidden"> <img src="img/projects/2.jpg" alt=""> </div>
+								<div class="con">
+									<h6><a href="armada-center.html">Exterior</a></h6>
+									<h5><a href="armada-center.html">Armada Center</a></h5>
+									<div class="line"></div> <a href="armada-center.html"><i class="ti-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="position-re o-hidden"> <img src="img/projects/3.jpg" alt=""> </div>
+								<div class="con">
+									<h6><a href="stonya-villa.html">Urban</a></h6>
+									<h5><a href="stonya-villa.html">Stonya Villa</a></h5>
+									<div class="line"></div> <a href="stonya-villa.html"><i class="ti-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="position-re o-hidden"> <img src="img/projects/4.jpg" alt=""> </div>
+								<div class="con">
+									<h6><a href="prime-hotel.html">Interior</a></h6>
+									<h5><a href="prime-hotel.html">Prime Hotel</a></h5>
+									<div class="line"></div> <a href="prime-hotel.html"><i class="ti-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!-- Services -->
+		<section class="services section-padding2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 animate-box text-center" data-animate-effect="fadeInUp">
+						<h2 class="section-title">Unsere <span>Services</span></h2>
+					</div>
+				</div>
+				<div class="row animate-box" data-animate-effect="fadeInUp">
+					<div class="col-md-4">
+						<div class="item">
+							<a href="streichen.html"> <img src="{% static 'images/icons/icon-1.png' %}" alt="">
+								<h5>Streichen</h5>
+								<div class="line"></div>
+								<p>Unser erfahrenes Team sorgt für professionelles Streichen von Innen- und Außenräumen.
+									Wir verwenden hochwertige Farben und Materialien für ein frisches und ansprechendes
+									Aussehen.</p>
+								<div class="numb">01</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<a href="fliesen-verlegen.html"> <img src="{% static 'images/icons/icon-2.png' %}" alt="">
+								<h5>Fliesen verlegen</h5>
+								<div class="line"></div>
+								<p>Wir bieten professionelles Fliesenlegen für Böden, Wände, Bäder und Küchen. Unser
+									Team arbeitet mit verschiedenen Fliesentypen, um Ihre individuellen Vorstellungen
+									umzusetzen.</p>
+								<div class="numb">02</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<a href="spachteln.html"> <img src="{% static 'images/icons/icon-3.png' %}" alt="">
+								<h5>Spachteln</h5>
+								<div class="line"></div>
+								<p>Unsere Handwerker gleichen unebene Oberflächen aus und schaffen eine perfekte
+									Grundlage für die weitere Gestaltung.</p>
+								<div class="numb">03</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<a href="tuer-einrichten.html"> <img src="{% static 'images/icons/icon-4.png' %}" alt="">
+								<h5>Tür einrichten</h5>
+								<div class="line"></div>
+								<p>Wir bieten professionelle Türinstallation und -einrichtungsdienste an. Unser Team
+									kümmert sich um alle Aspekte, von der Vermessung bis zur Montage der Türen.</p>
+								<div class="numb">04</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<a href="tapezieren.html"> <img src="{% static 'images/icons/icon-6.png' %}" alt="">
+								<h5>Tapezieren</h5>
+								<div class="line"></div>
+								<p>Wir bieten eine breite Palette an Tapeten und Dekorationsmöglichkeiten, um Ihren
+									Räumen einen individuellen und stilvollen Look zu verleihen.</p>
+								<div class="numb">05</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<a href="moebel-aufbauen.html"> <img src="{% static 'images/icons/icon-5.png' %}" alt="">
+								<h5>Möbel aufbauen</h5>
+								<div class="line"></div>
+								<p>Wir unterstützen Sie bei der Montage und dem Aufbau von Möbeln für verschiedene
+									Räumlichkeiten.</p>
+								<div class="numb">06</div>
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col text-center">
+							<div class="info-wrapper">
+								<div class="more"><a href="our-services.html" class="link-btn" tabindex="0">Mehr lesen
+										<i class="ti-arrow-right"></i></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Projects 4 -->
+		<section class="bauen-project section-padding2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 mb-30 text-center animate-box" data-animate-effect="fadeInUp">
+						<h2 class="section-title">Was <span>A+A BAU</span> so besonders macht</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="projects4 animate-box" data-animate-effect="fadeInUp">
+							<figure><img src="{% static 'images/quality-1.jpg' %}" alt="" class="img-fluid"></figure>
+							<div class="caption">
+								<h6>Our passion</h6>
+								<h4>Qualität und Handwerkskunst</h4>
+								<p>Bei uns stehen Qualität, Nachhaltigkeit und Kundenzufriedenheit an erster Stelle. Wir
+									verwenden hochwertige Materialien und setzen auf innovative Lösungen, um Ihnen
+									langfristige Ergebnisse von höchster Qualität zu bieten.</p>
+								<div class="butn-dark mt-15"> <a href="about.html"><span>Discover</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="projects4 left animate-box" data-animate-effect="fadeInUp">
+							<figure><img src="{% static 'images/customer-satisfaction.jpg' %}" alt="" class="img-fluid"></figure>
+							<div class="caption">
+								<h6>Strength</h6>
+								<h4>Kundenorientierung</h4>
+								<p>Unsere Kunden stehen an erster Stelle. Wir hören aufmerksam zu, verstehen ihre
+									Anforderungen und arbeiten eng mit ihnen zusammen, um maßgeschneiderte Lösungen zu
+									entwickeln, die ihren Bedürfnissen und Erwartungen gerecht werden.</p>
+								<div class="butn-dark mt-15"> <a href="contact.html"><span>Discover</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="projects4 animate-box" data-animate-effect="fadeInUp">
+							<figure><img src="{% static 'images/several_services.jpg' %}" alt="" class="img-fluid"></figure>
+							<div class="caption">
+								<h6>Services</h6>
+								<h4>Vielfältige Dienstleistungen</h4>
+								<p>Mit einem breiten Spektrum an Bauleistungen bieten wir umfassende Lösungen für
+									verschiedene Bauprojekte. Von Neubauten über Renovierungen bis hin zu Sanierungen -
+									wir decken eine Vielzahl von Anforderungen ab und bieten maßgeschneiderte Lösungen
+									für jeden Kunden.</p>
+								<div class="butn-dark mt-15"> <a href="our-services.html"><span>Discover</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Promo video - Testiominals -->
+		<section class="testimonials">
+			<div class="background bg-img bg-fixed section-padding pb-0" data-background="{% static 'images/bg_image_home_.jpg' %}"
+				data-overlay-dark="3">
+				<div class="container">
+					<div class="row animate-box" data-animate-effect="fadeInUp">
+						<!-- Promo video -->
+						<div class="col-md-6">
+							<div class="vid-area">
+								<div class="vid-icon mb-60">
+									<a class="play-button vid" href="/about.html">
+										<img src="{% static 'images/logo_with_text.svg' %}" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Testiominals -->
+						<div class="col-md-5 offset-md-1">
+							<div class="testimonials-box animate-box" data-animate-effect="fadeInUp">
+								<div class="head-box">
+									<h4>Kundenzufriedenheit im Mittelpunkt</h4>
+								</div>
+								<div class="owl-carousel owl-themed">
+									<div class="item">
+										<p>Wir verwandeln Gebäude in wahre Schönheiten. Kundenzufriedenheit und
+											Exzellenz sind unsere Priorität.</p>
+										<div class="info">
+											<div class="author-img"> <img src="{% static 'images/team/1.jpg' %}" alt=""> </div>
+											<div class="cont">
+												<h6>Abdulla Abdullaev</h6> <span>CEO</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Clients -->
+		<section class="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="owl-carousel owl-theme">
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/1.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/2.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/3.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/4.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/5.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/6.png' %}" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Cookies -->
+		<!-- Modal -->
+		<div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg  modal-dialog-centered">
+				<div class="modal-content modal-bg-color">
+					<div class="modal-header">
+						<h5 class="modal-title modal-text-color" id="cookieModalLabel">Cookie-Zustimmung</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<P class="caption modal-text-color">
+							Diese Webseite verwendet Cookies, um Ihr Benutzererlebnis zu verbessern. Mit der Nutzung
+							dieser Webseite stimmen Sie der Verwendung von Cookies zu.
+						</P>
+						<P class="caption modal-text-color">
+							Klicken Sie auf "Akzeptieren", um der Verwendung aller Cookies zuzustimmen. Wenn Sie Cookies
+							ablehnen möchten, klicken Sie auf "Ablehnen".
+						</P>
+					</div>
+					<div class="modal-footer butn-light">
+						<button type="button" class="btn btn-danger butn-light-button-full" id="rejectButton">Ablehnen</button>
+						<button type="button" class="btn btn-warning butn-light-button m-1" id="acceptButton">Akzeptieren</button>
+						<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
