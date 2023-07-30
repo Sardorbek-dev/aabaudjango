@@ -1,5 +1,196 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-<h1>contact</h1>
+    <!-- Content -->
+    <div class="content-wrapper">
+        <!-- Lines -->
+        <section class="content-lines-wrapper">
+            <div class="content-lines-inner">
+                <div class="content-lines"></div>
+            </div>
+        </section>
+        <!-- Header Banner -->
+        <section class="banner-header banner-img valign bg-img bg-fixed" data-overlay-darkgray="5"
+            data-background="{% static 'images/banner.jpg' %}">
+            <!-- Left Panel -->
+            <div class="left-panel"></div>
+        </section>
+        <!-- Contact -->
+        <section class="section-padding2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
+                        <h2 class="section-title">Kontaktieren Sie <span>Uns</span></h2>
+                    </div>
+                </div>
+                <div class="row mb-90">
+                    <div class="col-md-4 mb-30 animate-box" data-animate-effect="fadeInUp">
+                        <p><b>A + A BAU </b></p>
+                        <p>Wir legen großen Wert auf Qualität, Präzision und Kundenzufriedenheit und streben stets nach
+                            hervorragenden Ergebnissen.</p>
+                    </div>
+                    <div class="col-md-4 mb-30 animate-box" data-animate-effect="fadeInUp">
+                        <p><b>Wir sind für Sie da </b></p>
+                        <p>Sie suchen einen verlässlichen Partner für ein anstehendes Projekt? Sie wünschen
+                            weiterführende Informationen zu unseren Leistungen oder haben Detailfragen? Dann sprechen
+                            Sie uns an.</p>
+                    </div>
+                    <div class="col-md-4 mb-30 animate-box" data-animate-effect="fadeInUp">
+                        <p><b>Kontaktinformationen</b></p>
+                        <p><b>Phone :</b> +49 17621754911</p>
+                        <p><b>Email :</b> info@aplusabau.de</p>
+                        <p><b>Address :</b> Franz-Wolter-Straße 5, 81925 München</p>
+                    </div>
+                    <div class="col-12 animate-box" data-animate-effect="fadeInUp">
+                        <p><b>Kontaktieren Sie uns über WhatsApp! </b></p>
+                        <p>Wir bei A+A Bau möchten es Ihnen so einfach wie möglich machen, mit uns in Kontakt zu treten.
+                            Deshalb bieten wir Ihnen die Möglichkeit, uns auch über WhatsApp zu erreichen.
+                            Ob Sie Fragen zu unseren Dienstleistungen haben, ein Angebot einholen möchten oder einfach nur
+                            weitere Informationen benötigen - schreiben Sie uns gerne eine Nachricht über WhatsApp.</p>
+                    </div>
+                    <div class="row mb-60">
+                        <div class="butn-light mb-30"><a href="https://wa.me/4917621754911"><span>Kontaktieren</span></a></div>
+                    </div>
+                    <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
+                        <p><b>Kontaktformular</b></p>
+                        <form method="post" class="contact__form" action="mail.php">
+                            <!-- Form message -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                        Ihre Nachricht wurde erfolgreich gesendet!
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Form elements -->
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <input name="firstname" type="text" placeholder="Vorname *" required>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <input name="lastname" type="text" placeholder="Nachname *" required>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <input name="email" type="email" placeholder="Email-Adresse *" required>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <input name="phone" type="text" placeholder="Telefonnummer *" required>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <input name="street" type="text" placeholder="Straße, Hausnummer *" required>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <input name="postcode" type="text" placeholder="Postleitzahl *" required>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <input name="subject" type="text" placeholder="Subject *" required>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Nachricht *"
+                                        required></textarea>
+                                </div>
+                                <div class="col-md-12 form-group my-2">
+                                    <p>Datenschutz*</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Ich bin mit der Übermittlung meiner Daten an die A+A BAU
+                                            einverstanden und habe die Datenschutzerklärung gelesen. Die zu
+                                            übermittelnden Daten werden für eine weitere Kontaktaufnahme versendet.
+                                            Diese geschieht durch Email, Post oder Anruf. Sollten Sie zu einem späteren
+                                            Zeitpunkt die übermittelten Daten gelöscht haben wollen, so besteht gemäß §
+                                            13 TMG ein jederzeitiges Widerrufsrecht. Weitere Informationen zum Thema
+                                            Datenschutz können Sie unter dem Link <a
+                                                href="data-protection.html"><b>Datenschutzerklärung abrufen</b></a>.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input name="submit" type="submit" value="Senden">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Map Section -->
+                <div class="row">
+                    <div class="col-md-12 mb-30 animate-box" data-animate-effect="fadeInUp">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.7672176231335!2d11.628059976795871!3d48.17256754872411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e74e33d16a2dd%3A0xa794dfec6af31a17!2sFranz-Wolter-Stra%C3%9Fe%205%2C%2081925%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1685038695038!5m2!1sde!2sde"
+                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" class="map"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Promo video - Testiominals -->
+		<section class="testimonials">
+			<div class="background bg-img bg-fixed section-padding pb-0" data-background="{% static 'images/bg_image_home_.jpg' %}"
+				data-overlay-dark="3">
+				<div class="container">
+					<div class="row animate-box" data-animate-effect="fadeInUp">
+						<!-- Promo video -->
+						<div class="col-md-6">
+							<div class="vid-area">
+								<div class="vid-icon mb-60">
+									<a class="play-button vid" href="{% static 'images/about.jpg' %}">
+										<img src="{% static 'images/logo_with_text.svg' %}" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Testiominals -->
+						<div class="col-md-5 offset-md-1">
+							<div class="testimonials-box animate-box" data-animate-effect="fadeInUp">
+								<div class="head-box">
+									<h4>Kundenzufriedenheit im Mittelpunkt</h4>
+								</div>
+								<div class="owl-carousel owl-themed">
+									<div class="item">
+										<p>Wir verwandeln Gebäude in wahre Schönheiten. Kundenzufriedenheit und
+											Exzellenz sind unsere Priorität.</p>
+										<div class="info">
+											<div class="author-img"> <img src="{% static 'images/team/1.jpg' %}" alt=""> </div>
+											<div class="cont">
+												<h6>Abdulla Abdullaev</h6> <span>CEO</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Clients -->
+		<section class="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="owl-carousel owl-theme">
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/1.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/2.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/3.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/4.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/5.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/6.png' %}" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    </div>
 {% endblock %}

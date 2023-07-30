@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="content-wrapper">
+        <!-- Lines -->
+        <section class="content-lines-wrapper">
+            <div class="content-lines-inner">
+                <div class="content-lines"></div>
+            </div>
+        </section>
+        <!-- Header Banner -->
+        <section class="banner-header banner-img valign bg-img bg-fixed" data-overlay-darkgray="5" data-background="{% static 'images/banner.jpg' %}">
+            <!-- Left Panel -->
+            <div class="left-panel"></div>
+        </section>
+        <!-- About -->
+        <section class="about section-padding2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
+                        <h2 class="section-title">Über <span>A+A BAU </span></h2>
+                        <p>Seit unserer Gründung haben wir es uns zur Aufgabe gemacht, die Visionen unserer Kunden zu verwirklichen und ihre Gebäude in beeindruckende und funktionsfähige Räume zu verwandeln.</p>
+                        <p>Unser erfahrenes Team besteht aus qualifizierten Handwerkern und Bauprofis, die ihr Fachwissen und ihre Leidenschaft in jedes Projekt einbringen.</p>
+                        <p>Wir arbeiten eng mit Ihnen zusammen, um Ihre Anforderungen zu verstehen und maßgeschneiderte Lösungen zu entwickeln, die Ihren Erwartungen gerecht werden.</p>
+                    </div>
+                    <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
+                        <div class="about-img">
+                            <div class="img"> <img src="{% static 'images/about.jpg' %}" class="img-fluid" alt=""> </div>
+                            <div class="about-img-2 about-buro">München Office</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services -->
+		<section class="services section-padding2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
+						<h2 class="section-title">Was uns <span>auszeichnet</span></h2>
+                    </div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="item">
+							<a href="#"> <i class="ti-ruler-pencil" style="font-size: 50px; color: #b19777"></i>
+								<h5 class="mt-15">Erfahrung und Expertise</h5>
+								<div class="line"></div>
+								<p>Unser erfahrenes Team sorgt für professionelles Streichen von Innen- und Außenräumen. Wir verwenden hochwertige Farben und Materialien für ein frisches und ansprechendes Aussehen.</p>
+							</a>
+						</div>
+					</div>
+                    <div class="col-md-4">
+						<div class="item">
+							<a href="#"> <i class="ti-ruler-alt-2" style="font-size: 50px; color: #b19777"></i>
+								<h5 class="mt-15">Qualität und Präzision</h5>
+								<div class="line"></div>
+								<p>Wir legen größten Wert auf Qualität und Präzision in jedem Schritt unserer Arbeit. Von der Materialauswahl bis zur handwerklichen Umsetzung achten wir auf höchste Standards, um Ergebnisse zu erzielen.</p>
+							</a>
+						</div>
+					</div>
+                    <div class="col-md-4">
+						<div class="item">
+							<a href="#"> <i class="ti-home" style="font-size: 50px; color: #b19777"></i>
+								<h5 class="mt-15">Verlässlichkeit und Transparenz</h5>
+								<div class="line"></div>
+								<p>Bei uns können Sie auf eine verlässliche Partnerschaft zählen. Wir halten uns an vereinbarte Termine und Budgets und kommunizieren transparent mit Ihnen über den Fortschritt des Projekts.</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <!-- Career -->
+        <section class="positions section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 mb-30 text-center">
+                        <h2 class="section-title">Offene <span>Stellen</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mb-60">
+                        <div class="position"><a class="position-link" href="{% url 'contact' %}"></a>
+                            <div class="position-title">Maler & Lackierer <span>Bauengineering</span></div>
+                            <div class="position-location"><span>Location</span> München</div>
+                            <div class="position-time">Art der Beschäftigung <span>Vollzeit</span></div>
+                            <div class="position-icon"><i class="ti-arrow-top-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><small>Bitte senden Sie einen Lebenslauf und ein Anschreiben mit Gehaltsangaben an <b>info@aplusabau.de</b>.</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<section class="testimonials">
+			<div class="background bg-img bg-fixed section-padding pb-0" data-background="{% static 'images/bg_image_home_.jpg' %}" data-overlay-dark="3">
+				<div class="container">
+					<div class="row">
+						<!-- Promo video -->
+						<div class="col-md-6">
+							<div class="vid-area">
+								<div class="vid-icon">
+									<a class="play-button vid" href="{% url 'about' %}">
+									<img src="{% static 'images/logo_with_text.svg' %}" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 offset-md-1">
+							<div class="testimonials-box animate-box" data-animate-effect="fadeInUp">
+								<div class="head-box">
+									<h4>Kundenzufriedenheit im Mittelpunkt</h4>
+								</div>
+								<div class="owl-carousel owl-themed">
+									<div class="item">
+										<p>Wir verwandeln Gebäude in wahre Schönheiten. Kundenzufriedenheit und Exzellenz sind unsere Priorität.</p>
+										<div class="info">
+											<div class="author-img"> <img src="{% static 'images/team/1.jpg' %}" alt=""> </div>
+											<div class="cont">
+												<h6>Abdulla Abdullaev</h6> <span>CEO</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Clients -->
+		<section class="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="owl-carousel owl-theme">
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/1.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/2.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/3.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/4.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/5.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/6.png' %}" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    </div>
+{% endblock %}

@@ -11,3 +11,6 @@ class AboutPageView(TemplateView):
 class ContactCreateView(TemplateView):
 #    form_class = ContactUsForm
     template_name = 'contact.html'
+
+class ProcessView(TemplateView):
+    template_name = 'process.html'

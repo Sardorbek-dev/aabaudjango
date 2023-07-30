@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="content-wrapper">
+        <!-- Lines -->
+        <section class="content-lines-wrapper">
+            <div class="content-lines-inner">
+                <div class="content-lines"></div>
+            </div>
+        </section>
+        <!-- Header Banner -->
+        <section class="banner-header banner-img valign bg-img bg-fixed" data-overlay-darkgray="5"
+            data-background="{% static 'images/banner.jpg' %}">
+            <!-- Left Panel -->
+            <div class="left-panel"></div>
+        </section>
+        <!-- Process -->
+        <section class="process section-padding2">
+            <div class="container">
+                <div class="row animate-box" data-animate-effect="fadeInUp">
+                    <div class="col-md-12">
+                        <h2 class="section-title">Work <span>Process</span></h2>
+                    </div>
+                </div>
+                <div class="row text-center mt-60 mb-60 animate-box" data-animate-effect="fadeInUp">
+                    <div class="col-md-3">
+                        <div class="item first"> <img src="{% static 'images/arrow.png' %}" class="tobotm" alt=""> <span
+                                class="icon ti-thought"></span>
+                            <div class="cont">
+                                <h6>Bedarfsanalyse</h6>
+                                <div class="line"></div>
+                                <p>Wir hören Ihnen genau zu, um Ihre Anforderungen und Wünsche zu verstehen. Gemeinsam
+                                    entwickeln wir eine maßgeschneiderte Lösung für Ihr Projekt.</p>
+                                <h3>01</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item odd mb-md50"> <img src="{% static 'images/arrow.png' %}" alt=""> <span
+                                class="icon ti-direction-alt"></span>
+                            <div class="cont">
+                                <h3>02</h3>
+                                <h6>Planung und Umsetzung</h6>
+                                <div class="line"></div>
+                                <p>Unsere Experten erarbeiten detaillierte Pläne und setzen sie professionell um. Wir
+                                    achten auf Qualität, Termintreue und ein effizientes Vorgehen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item"> <img src="{% static 'images/arrow.png' %}" class="tobotm" alt=""> <span
+                                class="icon ti-ruler-pencil"></span>
+                            <div class="cont">
+                                <h3>03</h3>
+                                <h6>Qualitätskontrolle</h6>
+                                <div class="line"></div>
+                                <p>Wir überwachen den Fortschritt des Projekts und stellen sicher, dass alle Arbeiten
+                                    den höchsten Qualitätsstandards entsprechen. Ihre Zufriedenheit ist unser oberstes
+                                    Ziel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item odd"> <span class="icon ti-tag"></span>
+                            <div class="cont">
+                                <h3>04</h3>
+                                <h6>Projektabschluss</h6>
+                                <div class="line"></div>
+                                <p>Nach erfolgreicher Umsetzung präsentieren wir Ihnen stolz das Ergebnis. Wir nehmen
+                                    uns Zeit, um sicherzustellen, dass Sie mit dem Endergebnis vollkommen zufrieden
+                                    sind.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <section class="testimonials">
+                <div class="background bg-img bg-fixed section-padding pb-0" data-background="{% static 'images/bg_image_home_.jpg' %}"
+                    data-overlay-dark="3">
+                    <div class="container">
+                        <div class="row animate-box" data-animate-effect="fadeInUp">
+                            <!-- Promo video -->
+                            <div class="col-md-6">
+                                <div class="vid-area">
+                                    <div class="vid-icon mb-60">
+                                        <a class="play-button vid" href="{% url 'about' %}">
+                                            <img src="{% static 'images/logo_with_text.svg' %}" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testiominals -->
+                            <div class="col-md-5 offset-md-1">
+                                <div class="testimonials-box animate-box" data-animate-effect="fadeInUp">
+                                    <div class="head-box">
+                                        <h4>Kundenzufriedenheit im Mittelpunkt</h4>
+                                    </div>
+                                    <div class="owl-carousel owl-themed">
+                                        <div class="item">
+                                            <p>Wir verwandeln Gebäude in wahre Schönheiten. Kundenzufriedenheit und
+                                                Exzellenz sind unsere Priorität.</p>
+                                            <div class="info">
+                                                <div class="author-img"> <img src="{% static 'images/team/1.jpg' %}" alt=""> </div>
+                                                <div class="cont">
+                                                    <h6>Abdulla Abdullaev</h6> <span>CEO</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		<!-- Clients -->
+		<section class="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="owl-carousel owl-theme">
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/1.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/2.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/3.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/4.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/5.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/6.png' %}" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    </div>
+{% endblock %}

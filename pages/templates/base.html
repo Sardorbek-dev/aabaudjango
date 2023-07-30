@@ -31,7 +31,7 @@
     <!-- Logo -->
     <div class="logo-wrapper valign">
         <div class="logo">
-            <a href="index.html"> <img src="{% static 'images/logo_with_text.svg' %}" class="logo-img" alt="">
+            <a href="{% url 'home' %}"> <img src="{% static 'images/logo_with_text.svg' %}" class="logo-img" alt="">
                 <!-- <h3>A+A  B A U<span>INNOVATE DESIGN</span></h3> -->
             </a>
         </div>
@@ -43,18 +43,18 @@
     <!-- Menu -->
     <div class="collapse navbar-collapse p-md-4 p-lg-0" id="navbar">
         <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">Über uns</a></li>
-            <li class="nav-item"><a class="nav-link" href="our-services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">Über uns</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
             <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
                     data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Aktuelles <i
                         class="ti-angle-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="process.html" class="dropdown-item"><span>Work Process</span></a></li>
-                    <li><a href="contact.html" class="dropdown-item"><span>Partner werden</span></a></li>
+                    <li><a href="{% url 'process' %}" class="dropdown-item"><span>Work Process</span></a></li>
+                    <li><a href="{% url 'contact' %}" class="dropdown-item"><span>Partner werden</span></a></li>
                 </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Kontakt</a></li>
         </ul>
     </div>
 </nav>
