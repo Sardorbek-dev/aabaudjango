@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="content-wrapper">
+		<!-- Lines -->
+		<section class="content-lines-wrapper">
+			<div class="content-lines-inner">
+				<div class="content-lines"></div>
+			</div>
+		</section>
+		<!-- Header Banner -->
+		<section class="banner-header banner-img valign bg-img bg-fixed" data-overlay-darkgray="5" data-background="{% static 'images/banner.jpg' %}">
+			<!-- Left Panel -->
+			<div class="left-panel"></div>
+		</section>
+		<!-- Services Page -->
+		<section class="section-padding2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="section-title2">Laminat-Parkett</h2> </div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<p>Wir installieren hochwertige Laminat-Parkettböden, die sowohl ästhetisch ansprechend als auch langlebig sind.</p>
+						<p>Unsere Fachleute sorgen für eine fachgerechte Verlegung und eine perfekte Passform.</p>
+						<div class="row mb-30">
+							<div class="col-md-6 gallery-item">
+								<a href="{% static 'images/laminate/laminate-1.jpg' %}" title="Laminat-Parkett" class="img-zoom">
+									<div class="gallery-box">
+										<div class="gallery-img"> <img src="{% static 'images/laminate/laminate-1.jpg' %}" class="img-fluid mx-auto d-block"> </div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6 gallery-item">
+								<a href="{% static 'images/laminate/laminate-2.jpg' %}" title="Laminat-Parkett" class="img-zoom">
+									<div class="gallery-box">
+										<div class="gallery-img"> <img src="{% static 'images/laminate/laminate-2.jpg' %}" class="img-fluid mx-auto d-block"> </div>
+									</div>
+								</a>
+							</div>
+                            <div class="col-md-12 gallery-item">
+								<a href="{% static 'images/furniture/furniture_assembly-4.jpg' %}" title="Laminat-Parkett" class="img-zoom">
+									<div class="gallery-box">
+										<div class="gallery-img"> <img src="{% static 'images/laminate/laminate-2.jpg' %}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+                    <div class="col-md-4 sidebar-side">
+                        <aside class="sidebar blog-sidebar">
+                            <div class="sidebar-widget services">
+                                <div class="widget-inner">
+                                    <div class="sidebar-title">
+                                        <h4>Alle Services</h4>
+                                    </div>
+                                    <ul>
+                                        <li><a href="{% url 'streichen' %}">Streichen</a></li>
+                                        <li><a href="{% url 'fliesen-verlegen' %}">Fliesen verlegen</a></li>
+                                        <li><a href="{% url 'spachteln' %}">Spachteln</a></li>
+                                        <li><a href="{% url 'tuer-einrichten' %}">Tür einrichten</a></li>
+                                        <li><a href="{% url 'tapezieren' %}">Tapezieren</a></li>
+                                        <li><a href="{% url 'moebel-aufbauen' %}">Möbel aufbauen</a></li>
+                                        <li class="active"><a href="{% url 'laminat-parkett' %}">Laminat-Parkett</a></li>
+										<li><a href="{% url 'gipskartonplatte' %}">Gipskartonplatte</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+{% endblock %}

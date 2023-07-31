@@ -45,7 +45,7 @@
         <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">Über uns</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'our-services' %}">Services</a></li>
             <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
                     data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Aktuelles <i
                         class="ti-angle-down"></i></a>
@@ -63,6 +63,34 @@
 
 {% endblock %}
 
+<!-- Cookies -->
+<!-- Modal -->
+<div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg  modal-dialog-centered">
+        <div class="modal-content modal-bg-color">
+            <div class="modal-header">
+                <h5 class="modal-title modal-text-color" id="cookieModalLabel">Cookie-Zustimmung</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <P class="caption modal-text-color">
+                    Diese Webseite verwendet Cookies, um Ihr Benutzererlebnis zu verbessern. Mit der Nutzung
+                    dieser Webseite stimmen Sie der Verwendung von Cookies zu.
+                </P>
+                <P class="caption modal-text-color">
+                    Klicken Sie auf "Akzeptieren", um der Verwendung aller Cookies zuzustimmen. Wenn Sie Cookies
+                    ablehnen möchten, klicken Sie auf "Ablehnen".
+                </P>
+            </div>
+            <div class="modal-footer butn-light">
+                <button type="button" class="btn btn-danger butn-light-button-full" id="rejectButton">Ablehnen</button>
+                <button type="button" class="btn btn-warning butn-light-button m-1" id="acceptButton">Akzeptieren</button>
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Footer -->
 <footer class="main-footer dark">
     <div class="container">
@@ -73,13 +101,13 @@
                         <h6>A + A BAU</h6>
                     </div>
                     <div class="info-wrapper">
-                        <div class="more"><a href="about.html" class="link-btn" style="text-transform: none;"
+                        <div class="more"><a href="{% url 'about' %}" class="link-btn" style="text-transform: none;"
                                 tabindex="0">Über uns</a></div>
-                        <div class="more"><a href="contact.html" class="link-btn" style="text-transform: none;"
+                        <div class="more"><a href="{% url 'contact' %}" class="link-btn" style="text-transform: none;"
                                 tabindex="0">Kontakt</a></div>
-                        <div class="more"><a href="process.html" class="link-btn" style="text-transform: none;"
+                        <div class="more"><a href="{% url 'process' %}" class="link-btn" style="text-transform: none;"
                                 tabindex="0">Work Process</a></div>
-                        <div class="more"><a href="contact.html" class="link-btn" style="text-transform: none;"
+                        <div class="more"><a href="{% url 'contact' %}" class="link-btn" style="text-transform: none;"
                                 tabindex="0">Partner werden</a></div>
                     </div>
                 </div>
@@ -90,13 +118,13 @@
                         <h6>Services</h6>
                     </div>
                     <div class="info-wrapper">
-                        <div class="more"><a href="about.html" class="link-btn" style="text-transform: none;"
+                        <div class="more"><a href="{% url 'contact' %}" class="link-btn" style="text-transform: none;"
                                 tabindex="0">Renovierung</a></div>
-                        <div class="more"><a href="contact.html" class="link-btn" style="text-transform: none;"
+                        <div class="more"><a href="{% url 'contact' %}" class="link-btn" style="text-transform: none;"
                                 tabindex="0">Sanierung</a></div>
-                        <div class="more"><a href="about.html" class="link-btn" style="text-transform: none;"
+                        <div class="more"><a href="{% url 'contact' %}" class="link-btn" style="text-transform: none;"
                                 tabindex="0">Tapetizieren</a></div>
-                        <div class="more"><a href="contact.html" class="link-btn" style="text-transform: none;"
+                        <div class="more"><a href="{% url 'contact' %}" class="link-btn" style="text-transform: none;"
                                 tabindex="0">Möbel aufbauen</a></div>
                     </div>
                 </div>
@@ -123,16 +151,16 @@
                     </div>
                 </div>
                 <div class="col-md-4 abot">
-                    <div class="social-icon"> <a href="index.html"><i class="ti-facebook"></i></a> <a
-                            href="index.html"><i class="ti-twitter"></i></a> <a href="index.html"><i
-                                class="ti-instagram"></i></a> <a href="index.html"><i
-                                class="ti-pinterest"></i></a> </div>
+                    <div class="social-icon"> <a href="{% url 'home' %}"><i class="ti-facebook"></i></a> <a
+                            href="{% url 'home' %}"><i class="ti-twitter"></i></a> <a href="{% url 'home' %}"><i
+                                class="ti-instagram"></i></a> <a href="{% url 'home' %}"><i
+                                class="ti-linkedin"></i></a> </div>
                 </div>
                 <div class="col-md-4">
                     <p class="right">
-                        <a href="impressum.html">Impressum</a>
+                        <a href="{% url 'impressum' %}">Impressum</a>
                         &amp;
-                        <a href="data-protection.html">Datenschutz</a>
+                        <a href="{% url 'data-protection' %}">Datenschutz</a>
                     </p>
                 </div>
             </div>

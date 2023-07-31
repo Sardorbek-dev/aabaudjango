@@ -1,0 +1,292 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="content-wrapper">
+        <!-- Lines -->
+        <section class="content-lines-wrapper">
+            <div class="content-lines-inner">
+                <div class="content-lines"></div>
+            </div>
+        </section>
+        <!-- Header Banner -->
+        <section class="banner-header banner-img valign bg-img bg-fixed" data-overlay-darkgray="5"
+            data-background="{% static 'images/banner.jpg' %}">
+            <!-- Left Panel -->
+            <div class="left-panel"></div>
+        </section>
+        <!-- Services 4 -->
+        <div class="services4 section-padding2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
+                        <h2 class="section-title">Unsere <span>Services</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="square-flip">
+                            <div class="square bg-img" data-background="{% static 'images/streichen/streichen-0.jpg' %}">
+                                <div class="square-container d-flex align-items-end justify-content-end">
+                                    <div class="box-title text-vertical">
+                                        <h4>Streichen</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-overlay"></div>
+                            </div>
+                            <div class="square2">
+                                <div class="square-container2">
+                                    <div class="icon"><img src="{% static 'images/icons/icon-1.png' %}" alt=""></div>
+                                    <h4>Streichen</h4>
+                                    <p>Unser erfahrenes Team sorgt für professionelles Streichen von Innen- und
+                                        Außenräumen. Wir verwenden hochwertige Farben und Materialien für ein frisches
+                                        und ansprechendes Aussehen.</p>
+                                    <div class="btn-line"><a href="{% url 'streichen' %}">Mehr lesen</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="square-flip">
+                            <div class="square bg-img" data-background="{% static 'images/tile/tile-0.jpg' %}">
+                                <div class="square-container d-flex align-items-end justify-content-end">
+                                    <div class="box-title text-vertical">
+                                        <h4>Fliesen verlegen</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-overlay"></div>
+                            </div>
+                            <div class="square2">
+                                <div class="square-container2">
+                                    <div class="icon"><img src="{% static 'images/icons/icon-2.png' %}" alt=""></div>
+                                    <h4>Fliesen verlegen</h4>
+                                    <p>Wir bieten professionelles Fliesenlegen für Böden, Wände, Bäder und Küchen. Unser
+                                        Team arbeitet mit verschiedenen Fliesentypen, um Ihre individuellen
+                                        Vorstellungen umzusetzen.</p>
+                                    <div class="btn-line"><a href="{% url 'fliesen-verlegen' %}">Mehr lesen</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="square-flip">
+                            <div class="square bg-img" data-background="{% static 'images/spachteln/spachteln-0.jpg' %}">
+                                <div class="square-container d-flex align-items-end justify-content-end">
+                                    <div class="box-title text-vertical">
+                                        <h4>Spachteln</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-overlay"></div>
+                            </div>
+                            <div class="square2">
+                                <div class="square-container2">
+                                    <div class="icon"><img src="{% static 'images/icons/icon-3.png' %}" alt=""></div>
+                                    <h4>Spachteln</h4>
+                                    <p>Unsere Handwerker gleichen unebene Oberflächen aus und schaffen eine perfekte
+                                        Grundlage für die weitere Gestaltung.</p>
+                                    <div class="btn-line"><a href="{% url 'spachteln' %}">Mehr lesen</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="square-flip">
+                            <div class="square bg-img" data-background="{% static 'images/door/door-0.jpg' %}">
+                                <div class="square-container d-flex align-items-end justify-content-end">
+                                    <div class="box-title text-vertical">
+                                        <h4>Tür einrichten</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-overlay"></div>
+                            </div>
+                            <div class="square2">
+                                <div class="square-container2">
+                                    <div class="icon"><img src="{% static 'images/icons/icon-4.png' %}" alt=""></div>
+                                    <h4>Tür einrichten</h4>
+                                    <p>Wir bieten professionelle Türinstallation und -einrichtungsdienste an. Unser Team
+                                        kümmert sich um alle Aspekte, von der Vermessung bis zur Montage der Türen.</p>
+                                    <div class="btn-line"><a href="{% url 'tuer-einrichten' %}">Mehr lesen</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="square-flip">
+                            <div class="square bg-img" data-background="{% static 'images/wallpaper/wallpaper-0.jpg' %}">
+                                <div class="square-container d-flex align-items-end justify-content-end">
+                                    <div class="box-title text-vertical">
+                                        <h4>Tapezieren</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-overlay"></div>
+                            </div>
+                            <div class="square2">
+                                <div class="square-container2">
+                                    <div class="icon"><img src="{% static 'images/icons/icon-5.png' %}" alt=""></div>
+                                    <h4>Tapezieren</h4>
+                                    <p>Wir bieten eine breite Palette an Tapeten und Dekorationsmöglichkeiten, um Ihren
+                                        Räumen einen individuellen und stilvollen Look zu verleihen.</p>
+                                    <div class="btn-line"><a href="{% url 'tapezieren' %}">Mehr lesen</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="square-flip">
+                            <div class="square bg-img" data-background="{% static 'images/furniture/furniture_assembly-3.jpg' %}">
+                                <div class="square-container d-flex align-items-end justify-content-end">
+                                    <div class="box-title text-vertical">
+                                        <h4>Möbel aufbauen</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-overlay"></div>
+                            </div>
+                            <div class="square2">
+                                <div class="square-container2">
+                                    <div class="icon"><img src="{% static 'images/icons/icon-6.png' %}" alt=""></div>
+                                    <h4>Möbel aufbauen</h4>
+                                    <p>Wir unterstützen Sie bei der Montage und dem Aufbau von Möbeln für verschiedene
+                                        Räumlichkeiten.</p>
+                                    <div class="btn-line"><a href="{% url 'moebel-aufbauen' %}">Mehr lesen</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="square-flip">
+                            <div class="square bg-img" data-background="{% static 'images/laminate/laminate-0.jpg' %}">
+                                <div class="square-container d-flex align-items-end justify-content-end">
+                                    <div class="box-title text-vertical">
+                                        <h4>Laminat-Parkett</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-overlay"></div>
+                            </div>
+                            <div class="square2">
+                                <div class="square-container2">
+                                    <div class="icon"><img src="{% static 'images/clients/2.png' %}" style="width:110px" alt=""></div>
+                                    <h4>Laminat-Parkett</h4>
+                                    <p>Wir installieren hochwertige Laminat-Parkettböden, die ästhetisch ansprechend und
+                                        langlebig sind.</p>
+                                    <div class="btn-line"><a href="{% url 'laminat-parkett' %}">Mehr lesen</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="square-flip">
+                            <div class="square bg-img" data-background="{% static 'images/gypsumboard/gypsum_board_0.jpg' %}">
+                                <div class="square-container d-flex align-items-end justify-content-end">
+                                    <div class="box-title text-vertical">
+                                        <h4>Gipskartonplatte</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-overlay"></div>
+                            </div>
+                            <div class="square2">
+                                <div class="square-container2">
+                                    <div class="icon"><img src="{% static 'images/clients/6.png' %}" style="width:110px" alt=""></div>
+                                    <h4>Gipskartonplatte</h4>
+                                    <p>Wir arbeiten mit Gipskartonplatten für Trennwände, Deckenverkleidungen und andere
+                                        strukturelle Elemente.</p>
+                                    <div class="btn-line"><a href="{% url 'gipskartonplatte' %}">Mehr lesen</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="square-flip">
+                            <div class="square bg-img" data-background="{% static 'images/services/19.jpg' %}">
+                                <div class="square-container d-flex align-items-end justify-content-end">
+                                    <div class="box-title text-vertical">
+                                        <h4>Kundenspezifischer Service</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-overlay"></div>
+                            </div>
+                            <div class="square2">
+                                <div class="square-container2">
+                                    <h4>Kundenspezifischer Service</h4>
+                                    <p>Sie haben spezielle Anforderungen, die in unseren Standarddiensten nicht
+                                        abgedeckt sind? Kein Problem! Kontaktieren Sie uns! Gemeinsam entwickeln wir
+                                        eine maßgeschneiderte Lösung, die genau auf Sie zugeschnitten ist.
+                                        Kundenzufriedenheit steht bei uns an erster Stelle.</p>
+                                    <div class="btn-line"><a href="{% url 'contact' %}">Kontaktieren</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Promo video - Testiominals -->
+		<section class="testimonials">
+			<div class="background bg-img bg-fixed section-padding pb-0" data-background="{% static 'images/bg_image_home_.jpg' %}"
+				data-overlay-dark="3">
+				<div class="container">
+					<div class="row animate-box" data-animate-effect="fadeInUp">
+						<!-- Promo video -->
+						<div class="col-md-6">
+							<div class="vid-area">
+								<div class="vid-icon mb-60">
+									<a class="play-button vid" href="{% url 'about' %}">
+										<img src="{% static 'images/logo_with_text.svg' %}" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Testiominals -->
+						<div class="col-md-5 offset-md-1">
+							<div class="testimonials-box animate-box" data-animate-effect="fadeInUp">
+								<div class="head-box">
+									<h4>Kundenzufriedenheit im Mittelpunkt</h4>
+								</div>
+								<div class="owl-carousel owl-themed">
+									<div class="item">
+										<p>Wir verwandeln Gebäude in wahre Schönheiten. Kundenzufriedenheit und
+											Exzellenz sind unsere Priorität.</p>
+										<div class="info">
+											<div class="author-img"> <img src="{% static 'images/team/1.jpg' %}" alt=""> </div>
+											<div class="cont">
+												<h6>Abdulla Abdullaev</h6> <span>CEO</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Clients -->
+		<section class="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="owl-carousel owl-theme">
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/1.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/2.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/3.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/4.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/5.png' %}" alt=""></a>
+							</div>
+							<div class="clients-logo">
+								<a href="#0"><img src="{% static 'images/clients/6.png' %}" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    </div>
+{% endblock %}
