@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -128,3 +129,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 
+# Jazzmin
+JAZZMIN_SETTINGS = {
+    "site_title": "A+A BAU Admin Panel",
+    "site_brand": "A+A BAU Admin Panel",
+    "welcome_sign": "A+A BAU Admin Panel",
+}
