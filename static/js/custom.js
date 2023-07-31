@@ -599,7 +599,7 @@ customElements.define('main-footer', Footer);
 
 // cookies
 
-var cookieAccepted = getCookie('cookieAccepted');
+let cookieAccepted = getCookie('cookieAccepted');
 if (cookieAccepted === 'true') {
     // Cookie wurde bereits akzeptiert
     console.log('Cookie wurde akzeptiert.');
@@ -608,21 +608,21 @@ if (cookieAccepted === 'true') {
     console.log('Cookie wurde abgelehnt.');
 } else {
     // Cookie-Banner anzeigen
-    var cookieModal = new bootstrap.Modal(document.getElementById('cookieModal'));
+    let cookieModal = new bootstrap.Modal(document.getElementById('cookieModal'));
     cookieModal.show();
 }
 
 // Event Listener für den Akzeptieren-Button
 document.getElementById('acceptButton').addEventListener('click', function () {
     setCookie('cookieAccepted', 'true', 365); // Cookie für 365 Tage speichern
-    var cookieModal = bootstrap.Modal.getInstance(document.getElementById('cookieModal'));
+    let cookieModal = bootstrap.Modal.getInstance(document.getElementById('cookieModal'));
     cookieModal.hide();
 });
 
 // Event Listener für den Ablehnen-Button
 document.getElementById('rejectButton').addEventListener('click', function () {
     setCookie('cookieAccepted', 'false', 365); // Cookie für 365 Tage speichern
-    var cookieModal = bootstrap.Modal.getInstance(document.getElementById('cookieModal'));
+    let cookieModal = bootstrap.Modal.getInstance(document.getElementById('cookieModal'));
     cookieModal.hide();
 });
 
@@ -630,7 +630,7 @@ document.getElementById('rejectButton').addEventListener('click', function () {
 function setCookie(name, value, days) {
     var expires = '';
     if (days) {
-        var date = new Date();
+        let date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         expires = '; expires=' + date.toUTCString();
     }
@@ -639,10 +639,10 @@ function setCookie(name, value, days) {
 
 // Funktion zum Auslesen des Cookies
 function getCookie(name) {
-    var nameEQ = name + '=';
-    var cookies = document.cookie.split(';');
-    for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i];
+    let nameEQ = name + '=';
+    let cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+        let cookie = cookies[i];
         while (cookie.charAt(0) === ' ') {
             cookie = cookie.substring(1, cookie.length);
         }
