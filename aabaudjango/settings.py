@@ -117,9 +117,15 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
+# EMAIL BACKEND
+ # EMAIL_HOST = 'smtp.hostinger.com',
+ #EMAIL_HOST_USER = 'username',
+ #EMAIL_HOST_PASSWORD = 'password',
+ #EMAIL_PORT = 465,
+ # EMAIL_USE_TLS = False
+# EMAIL_USE_SSL = False
 
+# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))

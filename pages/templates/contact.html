@@ -52,62 +52,43 @@
                         <div class="butn-light mb-30"><a href="https://wa.me/4917621754911"><span>Kontaktieren</span></a></div>
                     </div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
-                        <p><b>Kontaktformular</b></p>
-                        <form method="post" class="contact__form" action="mail.php">
-                            <!-- Form message -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                        Ihre Nachricht wurde erfolgreich gesendet!
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Form elements -->
-                            <div class="row">
-                                <div class="col-md-4 form-group">
-                                    <input name="firstname" type="text" placeholder="Vorname *" required>
-                                </div>
-                                <div class="col-md-4 form-group">
-                                    <input name="lastname" type="text" placeholder="Nachname *" required>
-                                </div>
-                                <div class="col-md-4 form-group">
-                                    <input name="email" type="email" placeholder="Email-Adresse *" required>
-                                </div>
-                                <div class="col-md-4 form-group">
-                                    <input name="phone" type="text" placeholder="Telefonnummer *" required>
-                                </div>
-                                <div class="col-md-4 form-group">
-                                    <input name="street" type="text" placeholder="Straße, Hausnummer *" required>
-                                </div>
-                                <div class="col-md-4 form-group">
-                                    <input name="postcode" type="text" placeholder="Postleitzahl *" required>
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <input name="subject" type="text" placeholder="Subject *" required>
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Nachricht *"
-                                        required></textarea>
-                                </div>
-                                <div class="col-md-12 form-group my-2">
-                                    <p>Datenschutz*</p>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            Ich bin mit der Übermittlung meiner Daten an die A+A BAU
-                                            einverstanden und habe die Datenschutzerklärung gelesen. Die zu
-                                            übermittelnden Daten werden für eine weitere Kontaktaufnahme versendet.
-                                            Diese geschieht durch Email, Post oder Anruf. Sollten Sie zu einem späteren
-                                            Zeitpunkt die übermittelten Daten gelöscht haben wollen, so besteht gemäß §
-                                            13 TMG ein jederzeitiges Widerrufsrecht. Weitere Informationen zum Thema
-                                            Datenschutz können Sie unter dem Link <a
-                                                href="data-protection.html"><b>Datenschutzerklärung abrufen</b></a>.
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input name="submit" type="submit" value="Senden">
-                                </div>
+                        <p><b>Kontaktformular  {{ customer_firstname }}</b></p>
+                        <form method="post" class="contact__form" enctype="multipart/form-data">
+							<div class="row">
+								{% csrf_token %}
+                                <div class="form-check form-check-inline" style="padding-left: 10px;">
+									{% for radio in form.salutation %}
+									  {{ radio.tag }} <span style="margin-right: 15px">{{ radio.choice_label }}</span>
+									{% endfor %}
+								</div>
+								<div class="col-md-4 form-group">
+                            		{{ form.firstname }}
+								</div>
+								<div class="col-md-4 form-group">
+                            		{{ form.lastname }}
+								</div>
+								<div class="col-md-4 form-group">
+                            		{{ form.email }}
+								</div>
+								<div class="col-md-4 form-group">
+                            		{{ form.phone_number }}
+								</div>
+								<div class="col-md-4 form-group">
+                            		{{ form.address }}
+								</div>
+								<div class="col-md-4 form-group">
+                            		{{ form.zip_code }}
+								</div>
+								<div class="col-md-4 form-group">
+                            		{{ form.subject }}
+								</div>
+								<div class="col-md-12 form-group">
+									{{ form.content.label }}
+                            		{{ form.content }}
+								</div>
+							</div>
+                            <div class="col-md-12">
+                                <input name="submit" type="submit" value="Senden">
                             </div>
                         </form>
                     </div>

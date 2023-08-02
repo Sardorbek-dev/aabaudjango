@@ -144,6 +144,10 @@ textarea:focus {
 input[type='checkbox'] {
     background-color: #b19777;
 }
+input[type='radio'] {
+    background-color: #b19777;
+}
+
 input[type="password"],
 input[type="email"],
 input[type="text"],
