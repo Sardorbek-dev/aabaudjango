@@ -118,12 +118,13 @@ USE_TZ = True
 
 
 # EMAIL BACKEND
- # EMAIL_HOST = 'smtp.hostinger.com',
- #EMAIL_HOST_USER = 'username',
- #EMAIL_HOST_PASSWORD = 'password',
- #EMAIL_PORT = 465,
- # EMAIL_USE_TLS = False
-# EMAIL_USE_SSL = False
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.hostinger.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'info@aplusabau.de'
+EMAIL_HOST_PASSWORD = 'Aplusabau8887@'
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'

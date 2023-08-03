@@ -52,45 +52,55 @@
                         <div class="butn-light mb-30"><a href="https://wa.me/4917621754911"><span>Kontaktieren</span></a></div>
                     </div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
-                        <p><b>Kontaktformular  {{ customer_firstname }}</b></p>
-                        <form method="post" class="contact__form" enctype="multipart/form-data">
+						<p><b>Kontaktformular</b></p>
+						{% if messages %}
+							<div class="row">
+								<ul class="messages">
+									{% for message in messages %}
+									<li>{{ message }}</li>
+									{% endfor %}
+								</ul>
+							</div>
+						{% else %}
+						 <form method="post" class="contact__form_test" enctype="multipart/form-data">
 							<div class="row">
 								{% csrf_token %}
-                                <div class="form-check form-check-inline" style="padding-left: 10px;">
+								<div class="form-check form-check-inline" style="padding-left: 10px;">
 									{% for radio in form.salutation %}
 									  {{ radio.tag }} <span style="margin-right: 15px">{{ radio.choice_label }}</span>
 									{% endfor %}
 								</div>
 								<div class="col-md-4 form-group">
-                            		{{ form.firstname }}
+									{{ form.firstname }}
 								</div>
 								<div class="col-md-4 form-group">
-                            		{{ form.lastname }}
+									{{ form.lastname }}
 								</div>
 								<div class="col-md-4 form-group">
-                            		{{ form.email }}
+									{{ form.email }}
 								</div>
 								<div class="col-md-4 form-group">
-                            		{{ form.phone_number }}
+									{{ form.phone_number }}
 								</div>
 								<div class="col-md-4 form-group">
-                            		{{ form.address }}
+									{{ form.address }}
 								</div>
 								<div class="col-md-4 form-group">
-                            		{{ form.zip_code }}
+									{{ form.zip_code }}
 								</div>
 								<div class="col-md-4 form-group">
-                            		{{ form.subject }}
+									{{ form.subject }}
 								</div>
 								<div class="col-md-12 form-group">
 									{{ form.content.label }}
-                            		{{ form.content }}
+									{{ form.content }}
 								</div>
 							</div>
-                            <div class="col-md-12">
-                                <input name="submit" type="submit" value="Senden">
-                            </div>
-                        </form>
+							<div class="col-md-12">
+								<input name="submit" type="submit" value="Senden">
+							</div>
+						 </form>
+						{% endif %}
                     </div>
                 </div>
                 <!-- Map Section -->
@@ -175,3 +185,18 @@
 		</section>
     </div>
 {% endblock %}
+
+<script>
+
+    $(document)
+        .ready(function() {
+
+        // hide Alert after 3 seconds
+        setTimeout(function(){
+            if (!$('.message_sent').hasClass('hidden')){
+                $('.message_sent').addClass('hidden')
+            }
+        }, 10000)
+	})
+
+</script>
