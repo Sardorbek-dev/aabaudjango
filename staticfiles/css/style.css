@@ -4656,7 +4656,6 @@ hr.border-2 {
 	position: relative;
 	background-blend-mode: overlay;
 	background: rgba(0,0,0,.6);
-	background-image: url("../img/slider/2.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;

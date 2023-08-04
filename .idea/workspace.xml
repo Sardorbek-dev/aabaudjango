@@ -4,8 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cae23c8-35a6-40c2-bbe6-d3b8e71a5f4c" name="Changes" comment="updated requirements.txt">
+    <list default="true" id="7cae23c8-35a6-40c2-bbe6-d3b8e71a5f4c" name="Changes" comment="compressed images">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aabaudjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/aabaudjango/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/door/door-0.be9cd7650bfb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/door/door-0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/door/door-0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/door/door-1.80fe063bc59d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/door/door-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/door/door-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/door/door-3.74597fb1190f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/door/door-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/door/door-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/door/door_2.1aa9bd14c225.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/door/door_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/door/door_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-1.b44ad36a77a4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-2.4230b6c3f010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-3.effab9701a5d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-4.f5df5dafbd35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-5.b2714f10ba10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/furniture/furniture_assembly-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-0.68c678c11806.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-1.63a1ba3ef3d3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-2.171338d38893.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-3.d060129478d4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/laminate/laminate-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/streichen/streichen-3.293dede8f111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/streichen/streichen-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/streichen/streichen-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/streichen/streichen-4.dbadc007c7a9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/streichen/streichen-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/streichen/streichen-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/tile/tile-0.b6aa05f0c7e8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/tile/tile-0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/tile/tile-0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/tile/tile-1.3437b12de94a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/tile/tile-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/tile/tile-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/tile/tile-2.ae50fd5b3456.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/tile/tile-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/tile/tile-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/tile/tile-3.ceeae5d815fe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/tile/tile-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/tile/tile-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/tile/tile-4.d569f2dcc0f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/tile/tile-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/tile/tile-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-0.538b7753852a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-1.11fb668bcfbb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-2.8ceaa1a09457.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-3.23f07d20aed9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-4.e5789b1c0c00.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/images/wallpaper/wallpaper-4.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +187,35 @@
       <option name="project" value="LOCAL" />
       <updated>1691166521098</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fixed requirements.txt">
+      <created>1691167266174</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1691167266174</updated>
+    </task>
+    <task id="LOCAL-00014" summary="environs removed">
+      <created>1691167287645</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1691167287645</updated>
+    </task>
+    <task id="LOCAL-00015" summary="unversioned files added">
+      <created>1691167456334</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1691167456334</updated>
+    </task>
+    <task id="LOCAL-00016" summary="compressed images">
+      <created>1691189737039</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1691189737039</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +243,10 @@
     <MESSAGE value="preparation for deployment" />
     <MESSAGE value="changed allowed hosts" />
     <MESSAGE value="updated requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated requirements.txt" />
+    <MESSAGE value="fixed requirements.txt" />
+    <MESSAGE value="environs removed" />
+    <MESSAGE value="unversioned files added" />
+    <MESSAGE value="compressed images" />
+    <option name="LAST_COMMIT_MESSAGE" value="compressed images" />
   </component>
 </project>
