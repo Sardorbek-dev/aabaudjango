@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7cae23c8-35a6-40c2-bbe6-d3b8e71a5f4c" name="Changes" comment="updated requirements.txt">
+      <change beforePath="$PROJECT_DIR$/aabaudjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/aabaudjango/settings.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2RxrGADovmtoy7NjyrXOpu0wQaq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Sardor\aplusabaudjango" />
+      <recent name="E:\Sardor\aplusabaudjango\static\images\spachteln" />
+      <recent name="E:\Sardor\aplusabaudjango\static\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7cae23c8-35a6-40c2-bbe6-d3b8e71a5f4c" name="Changes" comment="" />
+      <created>1688202474559</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688202474559</updated>
+    </task>
+    <task id="LOCAL-00001" summary="pages app added and base template created">
+      <created>1688229307889</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688229307889</updated>
+    </task>
+    <task id="LOCAL-00002" summary="about page modified and process page added">
+      <created>1690749640651</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690749640651</updated>
+    </task>
+    <task id="LOCAL-00003" summary="other pages added and modified">
+      <created>1690827654885</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690827654885</updated>
+    </task>
+    <task id="LOCAL-00004" summary="change var to let to avoid undesired errors">
+      <created>1690831846728</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690831846728</updated>
+    </task>
+    <task id="LOCAL-00005" summary="jazzmin library added">
+      <created>1690832772131</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690832772131</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implementation of the contact form, send message using the contact form">
+      <created>1690996509778</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690996509779</updated>
+    </task>
+    <task id="LOCAL-00007" summary="email sending">
+      <created>1691093255632</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691093255632</updated>
+    </task>
+    <task id="LOCAL-00008" summary="requirements.txt file added">
+      <created>1691099678237</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691099678237</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix DisallowedHost">
+      <created>1691100392666</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691100392666</updated>
+    </task>
+    <task id="LOCAL-00010" summary="preparation for deployment">
+      <created>1691165657185</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1691165657185</updated>
+    </task>
+    <task id="LOCAL-00011" summary="changed allowed hosts">
+      <created>1691166033351</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1691166033351</updated>
+    </task>
+    <task id="LOCAL-00012" summary="updated requirements.txt">
+      <created>1691166521098</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1691166521098</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pages app added and base template created" />
+    <MESSAGE value="about page modified and process page added" />
+    <MESSAGE value="other pages added and modified" />
+    <MESSAGE value="change var to let to avoid undesired errors" />
+    <MESSAGE value="jazzmin library added" />
+    <MESSAGE value="Implementation of the contact form, send message using the contact form" />
+    <MESSAGE value="email sending" />
+    <MESSAGE value="requirements.txt file added" />
+    <MESSAGE value="fix DisallowedHost" />
+    <MESSAGE value="preparation for deployment" />
+    <MESSAGE value="changed allowed hosts" />
+    <MESSAGE value="updated requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated requirements.txt" />
+  </component>
+</project>

@@ -1,0 +1,26 @@
+/* ----------------------------------------------------------------
+			[ All Css Plugins & Helper Classes File ]
+-----------------------------------------------------------------*/
+
+/* == bootstrap == */
+@import url("plugins/bootstrap.min.9891e97c048e.css");
+
+/* == owl.carousel == */
+@import url("plugins/owl.carousel.min.b02c228a6088.css");
+@import url("plugins/owl.theme.default.min.594b81805a98.css");
+
+/* == animate css == */
+@import url("plugins/animate.min.86dba2fdf372.css");
+
+/* == themify icons ==*/
+@import url("plugins/themify-icons.6b499d362234.css");
+
+/* == magnific-popup gallery  == */
+@import url("plugins/magnific-popup.e8433d87cd6d.css");
+
+/* == YouTubePopUp == */
+@import url("plugins/YouTubePopUp.e64657e8abc0.css");
+
+/* == BeforeAfter == */
+@import url("plugins/before-after.86de11715201.css");
+
