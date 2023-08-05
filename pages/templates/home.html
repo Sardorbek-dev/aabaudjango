@@ -239,70 +239,31 @@
                 <h4>
                     Testimonial
                 </h4>
-                <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="testimonial4_slide">
-                                <div class="row mb-30">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                    </div>
-                                </div>
-                                <p>
-                                    <span class="quote-modified-left"><i class="ti-quote-left"></i></span>
-                                    Wir waren beeindruckt von der Professionalität und dem Engagement des Bauunternehmens bei der Umsetzung unseres Projekts.
-									Die Qualität der Arbeit hat unsere Erwartungen übertroffen, und wir würden sie jederzeit wieder engagieren.
-                                    <span class="quote-modified-right"><i class="ti-quote-right"></i></span>
-                                </p>
-                                <h4>Petra Schneider</h4>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="testimonial4_slide">
-                                <div class="row mb-30">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                    </div>
-                                </div>
-                                <p>
-                                    <span class="quote-modified-left"><i class="ti-quote-left"></i></span>
-                                    Unsere Erfahrung mit dem Bauunternehmen war äußerst positiv. Sie haben unsere Ideen aufgenommen und sie in ein funktionales und ästhetisch ansprechendes Design umgesetzt.
-									Die Bauphase verlief reibungslos, und wir sind mit dem Ergebnis sehr zufrieden.
-                                    <span class="quote-modified-right"><i class="ti-quote-right"></i></span>
-                                </p>
-                                <h4>Klaus Müller</h4>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="testimonial4_slide">
-                                <div class="row mb-30">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                        <img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
-                                    </div>
-                                </div>
-                                <p>
-                                    <span class="quote-modified-left"><i class="ti-quote-left"></i></span>
-                                    Wir waren beeindruckt von der Kreativität und dem Einfallsreichtum des Bauunternehmens bei der Renovierung unseres historischen Gebäudes.
-									Sie haben es geschafft, den Charme des Gebäudes zu bewahren, während sie es in eine moderne Nutzung umgewandelt haben.
-                                    <span class="quote-modified-right"><i class="ti-quote-right"></i></span>
-                                </p>
-                                <h4>David und Sarah Meier</h4>
-                            </div>
-                        </div>
-                    </div>
+                <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+					 data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+						<div class="carousel-inner" role="listbox" id="addToCarouselActiveClass">
+							{% for review in reviews %}
+							<div class="carousel-item">
+								<div class="testimonial4_slide">
+									<div class="row mb-30">
+										<div class="d-flex justify-content-center">
+											<img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
+											<img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
+											<img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
+											<img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
+											<img src="{% static 'images/star_review.svg' %}" class="img-circle img-responsive" />
+										</div>
+									</div>
+									<p>
+										<span class="quote-modified-left"><i class="ti-quote-left"></i></span>
+										{{ review.reviewer_content }}
+										<span class="quote-modified-right"><i class="ti-quote-right"></i></span>
+									</p>
+									<h4>{{ review.reviewer_firstname }} {{ review.reviewer_lastname }}</h4>
+								</div>
+							</div>
+						   {% endfor %}
+						</div>
                     <a class="carousel-control-prev" href="#testimonial4" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
@@ -310,6 +271,9 @@
                         <span class="carousel-control-next-icon"></span>
                     </a>
                 </div>
+				<div class="row mb-60">
+					<div class="butn-light mb-30"><a href="{% url 'send-review' %}"><span>Bewerten</span></a></div>
+				</div>
             </div>
         </section>
 		<!-- Promo video - Testiominals -->
@@ -383,4 +347,8 @@
 		</section>
 
 	</div>
+<script>
+	let testimonialsNode = document.querySelectorAll('#addToCarouselActiveClass')
+	testimonialsNode[0].childNodes[0].nextElementSibling.classList.add("active")
+</script>
 {% endblock %}

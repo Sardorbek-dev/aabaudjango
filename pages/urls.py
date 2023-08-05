@@ -1,7 +1,7 @@
 from django.urls import path, include
 from .views import HomePageView, AboutPageView, ContactCreateView, ProcessView, OurServicesView, StreichenView, \
     FliesenVerlegenView, SpachtelnView, TuerEinrichtenView, TapezierenView, MoebelAufbauenView, LaminatParkettView, GipskartonplatteView, \
-    ImpressumView, DataProtectionView
+    ImpressumView, DataProtectionView, ReviewCreateView
 
 urlpatterns = [
     path('', HomePageView.as_view(), name='home'),
@@ -9,6 +9,7 @@ urlpatterns = [
     path('contact', ContactCreateView.as_view(), name='contact'),
     path('process', ProcessView.as_view(), name='process'),
     path('our-services', OurServicesView.as_view(), name='our-services'),
+    path('send-review', ReviewCreateView.as_view(), name='send-review'),
     path('streichen', StreichenView.as_view(), name='streichen'),
     path('fliesen-verlegen', FliesenVerlegenView.as_view(), name='fliesen-verlegen'),
     path('spachteln', SpachtelnView.as_view(), name='spachteln'),

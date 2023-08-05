@@ -20,39 +20,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
-                        <h2 class="section-title">Kontaktieren Sie <span>Uns</span></h2>
+                        <h2 class="section-title">Bewerten Sie <span>Uns</span></h2>
                     </div>
                 </div>
                 <div class="row mb-90">
-                    <div class="col-md-4 mb-30 animate-box" data-animate-effect="fadeInUp">
-                        <p><b>A + A BAU </b></p>
-                        <p>Wir legen großen Wert auf Qualität, Präzision und Kundenzufriedenheit und streben stets nach
-                            hervorragenden Ergebnissen.</p>
-                    </div>
-                    <div class="col-md-4 mb-30 animate-box" data-animate-effect="fadeInUp">
-                        <p><b>Wir sind für Sie da </b></p>
-                        <p>Sie suchen einen verlässlichen Partner für ein anstehendes Projekt? Sie wünschen
-                            weiterführende Informationen zu unseren Leistungen oder haben Detailfragen? Dann sprechen
-                            Sie uns an.</p>
-                    </div>
-                    <div class="col-md-4 mb-30 animate-box" data-animate-effect="fadeInUp">
-                        <p><b>Kontaktinformationen</b></p>
-                        <p><b>Phone :</b> +49 17621754911</p>
-                        <p><b>Email :</b> info@aplusabau.de</p>
-                        <p><b>Address :</b> Franz-Wolter-Straße 5, 81925 München</p>
-                    </div>
-                    <div class="col-12 animate-box" data-animate-effect="fadeInUp">
-                        <p><b>Kontaktieren Sie uns über WhatsApp! </b></p>
-                        <p>Wir bei A+A Bau möchten es Ihnen so einfach wie möglich machen, mit uns in Kontakt zu treten.
-                            Deshalb bieten wir Ihnen die Möglichkeit, uns auch über WhatsApp zu erreichen.
-                            Ob Sie Fragen zu unseren Dienstleistungen haben, ein Angebot einholen möchten oder einfach nur
-                            weitere Informationen benötigen - schreiben Sie uns gerne eine Nachricht über WhatsApp.</p>
-                    </div>
-                    <div class="row mb-60">
-                        <div class="butn-light mb-30"><a href="https://wa.me/4917621754911"><span>Kontaktieren</span></a></div>
-                    </div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
-						<p><b>Kontaktformular</b></p>
+						<p><b>Bewertungsformular</b></p>
 						{% if messages %}
 							<div class="row">
 								<ul class="messages">
@@ -66,34 +39,46 @@
 							<div class="row">
 								{% csrf_token %}
 								<div class="form-check form-check-inline" style="padding-left: 10px;">
-									{% for radio in form.salutation %}
-								  {{ radio.tag }} <span style="margin-right: 15px">{{ radio.choice_label }}</span>
+									{% for radio in form.reviewer_salutation %}
+									  {{ radio.tag }} <span style="margin-right: 15px">{{ radio.choice_label }}</span>
 									{% endfor %}
 								</div>
-								<div class="col-md-4 form-group">
-									{{ form.firstname }}
+								<div class="col-md-4 form-group mb-md-4">
+									{{ form.reviewer_firstname }}
 								</div>
-								<div class="col-md-4 form-group">
-									{{ form.lastname }}
+								<div class="col-md-4 form-group mb-md-4">
+									{{ form.reviewer_lastname }}
 								</div>
-								<div class="col-md-4 form-group">
-									{{ form.email }}
+								<div class="col-md-4 form-group mb-md-4">
+									{{ form.reviewer_email }}
 								</div>
-								<div class="col-md-4 form-group">
-									{{ form.phone_number }}
+								<div class="col-md-12 form-check" style="padding-left: 10px;">
+									{{ form.reviewer_projectType.label }}
 								</div>
-								<div class="col-md-4 form-group">
-									{{ form.address }}
+								<div class="form-check form-check-inline mb-4" style="padding-left: 10px;">
+									{% for radio in form.reviewer_projectType %}
+									  {{ radio.tag }} <span style="margin-right: 15px">{{ radio.choice_label }}</span>
+									{% endfor %}
 								</div>
-								<div class="col-md-4 form-group">
-									{{ form.zip_code }}
+								<div class="col-md-12 form-check" style="padding-left: 10px;">
+									{{ form.reviewer_rating.label }}
 								</div>
-								<div class="col-md-4 form-group">
-									{{ form.subject }}
+								<div class="form-check form-check-inline mb-4" style="padding-left: 10px;">
+									{% for radio in form.reviewer_rating %}
+									  {{ radio.tag }} <span style="margin-right: 15px">{{ radio.choice_label }}</span>
+									{% endfor %}
 								</div>
 								<div class="col-md-12 form-group">
-									{{ form.content.label }}
-									{{ form.content }}
+									{{ form.reviewer_content.label }}
+									{{ form.reviewer_content }}
+								</div>
+								<div class="col-md-12 form-check" style="padding-left: 10px;">
+									{{ form.reviewer_confirmation.label }}
+								</div>
+								<div class="form-check form-check-inline mb-4" style="padding-left: 10px;">
+									{% for radio in form.reviewer_confirmation %}
+									  {{ radio.tag }} <span style="margin-right: 15px">{{ radio.choice_label }}</span>
+									{% endfor %}
 								</div>
 							</div>
 							<div class="col-md-12">
@@ -103,18 +88,9 @@
 						{% endif %}
                     </div>
                 </div>
-                <!-- Map Section -->
-                <div class="row">
-                    <div class="col-md-12 mb-30 animate-box" data-animate-effect="fadeInUp">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.7672176231335!2d11.628059976795871!3d48.17256754872411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e74e33d16a2dd%3A0xa794dfec6af31a17!2sFranz-Wolter-Stra%C3%9Fe%205%2C%2081925%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1685038695038!5m2!1sde!2sde"
-                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" class="map"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
             </div>
         </section>
-        <!-- Promo video - Testiominals -->
+        <!-- Testiominals -->
 		<section class="testimonials">
 			<div class="background bg-img bg-fixed section-padding pb-0" data-background="{% static 'images/bg_image_home_.jpg' %}"
 				data-overlay-dark="3">

@@ -1,15 +1,22 @@
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView, CreateView
-from .forms import ContactUsForm
+from .forms import ContactUsForm, CustomerReviewForm
 from django.urls import reverse_lazy
 from django.contrib import messages
 from django.core.mail import EmailMessage
 from django.conf import settings
 from django.template.loader import render_to_string
+from .models import CustomerReview
 
 # Create your views here.
 class HomePageView(TemplateView):
     template_name = 'home.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['reviews'] = CustomerReview.objects.all()
+        print('context: ', context)
+        return context
 
 class AboutPageView(TemplateView):
     template_name = 'about.html'
@@ -83,5 +90,45 @@ class ContactCreateView(CreateView):
         return self.request.user.is_superuser
 
     def get_success_url(self):
-        messages.success(self.request, 'Ihre Nachricht wurde erfolgreich gesendet!')
+        success_text = 'Vielen Dank! Ihre Anfrage ist eingegangen.<br> ' \
+                       'Ihre Nachricht wurde erfolgreich übermittelt. Unser Team wird sich in Kürze mit Ihnen in Verbindung setzen! <br>'\
+                       '<br>' \
+                       'Mit freundlichen Grüßen,<br>' \
+                       'A+A Bau Team'
+        messages.success(self.request, success_text)
         return reverse_lazy('contact')
+
+
+class ReviewCreateView(CreateView):
+    form_class = CustomerReviewForm
+    template_name = 'send-review.html'
+
+    def form_valid(self, form):
+        try:
+            form.instance.author = self.request.user
+
+            #send email
+            template = render_to_string('email-template-success-review.html')
+            email = EmailMessage(
+                'Bewertung erfolgreich eingereicht',
+                template,
+                settings.EMAIL_HOST_USER,
+                [self.request.POST['reviewer_email']]
+            )
+            fail_silently = False
+            email.send()
+
+            return super().form_valid(form)
+        except Exception as e:
+            messages.error(self.request, f"An error occurred: {e}")
+            return self.form_invalid(form)
+
+    def get_success_url(self):
+        success_text = 'Vielen Dank! Ihre Bewertung ist eingegangen. <br>' \
+                       'Ihre Bewertung wurde erfolgreich übermittelt. Wir schätzen Ihr Feedback sehr.<br> ' \
+                       'Bei Fragen oder weiteren Anliegen stehen wir Ihnen gerne zur Verfügung!<br>' \
+                       '<br>' \
+                       'Mit freundlichen Grüßen,<br>' \
+                       'A+A Bau Team'
+        messages.success(self.request, success_text)
+        return reverse_lazy('send-review')
