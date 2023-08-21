@@ -79,10 +79,22 @@ WSGI_APPLICATION = 'aabaudjango.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'aabaudb',
+        'USER': 'sardor_admin',
+        'PASSWORD': 'sardor1001@',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
+
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
 
 
 # Password validation
