@@ -80,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'aabaudb',
-        'USER': 'sardor_admin',
-        'PASSWORD': 'sardor1001@',
+        'USER': 'abdulla',
+        'PASSWORD': 'abdulla1001@',
         'HOST': 'localhost',
         'PORT': '',
     }
